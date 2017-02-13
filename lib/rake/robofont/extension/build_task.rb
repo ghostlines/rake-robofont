@@ -23,6 +23,7 @@ module Rake
           ]
 
           source_files.exclude('*.pyc')
+          source_files.exclude('*.egg-info')
           CLEAN.include(FileList['**/*.pyc'])
 
           directory "#{extension_name}.roboFontExt"
